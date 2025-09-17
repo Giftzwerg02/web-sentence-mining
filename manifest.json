@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Web Sentence Mining",
+  "version": "1.0",
+  "description": "Macros to simplify sentence mining across the web",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["mining.js"]
+    }
+  ],
+  "background": {
+	"scripts": ["bmining.js"]
+  },
+  "permissions": ["menus", "activeTab"]
+}
